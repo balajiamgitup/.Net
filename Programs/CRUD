@@ -1,0 +1,57 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication3
+{
+    public class Employee
+    {
+        public string name;
+        public int id;
+        public int salary;
+        public string account;
+        public Employee(string name, int id, int salary, string account)
+        {
+            this.name = name;
+            this.id = id;
+            this.salary = salary;
+            this.account = account;
+        }
+    }
+
+    class EmpEdit : Employee
+    {
+
+        EmpEdit(string name, int id, int salary, string account)
+            : base(name, id, salary, account)
+        {
+
+
+        }
+        public void add()
+        {
+
+            Console.WriteLine("Enter your name");
+            name = Console.ReadLine();
+
+            Console.WriteLine("Enter your id");
+            id = int.Parse(Console.ReadLine());
+        //  Console.WriteLine("Enter your salary");
+       //   salary = int.Parse(Console.ReadLine());
+        //  Console.WriteLine("Enter your account");
+        //  account = Console.ReadLine();
+
+
+        }
+
+        static public void Main(String[] args)
+        {
+
+            EmpEdit E = new EmpEdit("balaji", 101, 2222222, "TSG");
+            E.add();
+
+
+        }
+    }
+}
