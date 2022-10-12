@@ -4,5 +4,15 @@ https://www.lambdatest.com/blog/top-selenium-csharp-framework/
 //////////////////Basics links/////////////////////////
 https://app.pluralsight.com/paths/skill/csharp   
 /////////////////DB LINKS///////////////////////////////////
+
 https://www.geeksforgeeks.org/basic-database-operations-using-c-sharp/
 https://www.halvorsen.blog/documents/teaching/courses/csharp/database.php
+
+*******connection**************
+
+https://www.c-sharpcorner.com/article/connect-to-a-database-from-visual-studio/
+https://www.msdotnet.co.in/2013/07/how-to-create-setup-fileexe-with.html#:~:text=Step%201%20%3A%20First%20open%20your,based%20Database%2D%2D%3EClick%20Add.
+https://www.c-sharpcorner.com/article/how-to-create-sql-server-database-project-with-visual-studio/
+
+********UntiTesting*************************************
+https://learn.microsoft.com/en-us/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code?view=vs-2022
