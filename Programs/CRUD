@@ -7,11 +7,11 @@ namespace ConsoleApplication3
 {
     public class Employee
     {
-        public string name;
+        public String name;
         public int id;
         public int salary;
-        public string account;
-        public Employee(string name, int id, int salary, string account)
+        public String account;
+        public Employee(String name, int id, int salary, String account)
         {
             this.name = name;
             this.id = id;
@@ -23,7 +23,7 @@ namespace ConsoleApplication3
     class EmpEdit : Employee
     {
 
-        EmpEdit(string name, int id, int salary, string account)
+        EmpEdit(String name, int id, int salary,String account)
             : base(name, id, salary, account)
         {
 
@@ -37,10 +37,10 @@ namespace ConsoleApplication3
 
             Console.WriteLine("Enter your id");
             id = int.Parse(Console.ReadLine());
-        //  Console.WriteLine("Enter your salary");
-       //   salary = int.Parse(Console.ReadLine());
-        //  Console.WriteLine("Enter your account");
-        //  account = Console.ReadLine();
+          Console.WriteLine("Enter your salary");
+        salary = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter your account");
+          account = Console.ReadLine();
 
 
         }
@@ -48,9 +48,11 @@ namespace ConsoleApplication3
         static public void Main(String[] args)
         {
 
-            EmpEdit E = new EmpEdit("balaji", 101, 2222222, "TSG");
-            E.add();
-
+            EmpEdit E = new EmpEdit("balaji", 101, 2222, "TSG");
+            Console.WriteLine("Name :{0} , ID :{1} , Salary{2} ,  Account{2} ", E.name, E.id, E.salary, E.account);
+            Console.WriteLine("Enter your name");
+        E.name = Console.ReadLine();
+        Console.WriteLine("Name :{0} ", E.name);
 
         }
     }
