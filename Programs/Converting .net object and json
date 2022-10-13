@@ -1,0 +1,33 @@
+[DataContract]
+class BlogSite
+{
+    [DataMember]
+    public string Name { get; set; }
+
+    [DataMember]
+    public string Description { get; set; }
+}
+
+
+//Serialization
+
+// Creating BlogSites object   
+BlogSites bsObj = new BlogSites()
+{
+    Name = "C-sharpcorner",
+    Description = "Share Knowledge"
+};
+
+// Convert BlogSites object to JOSN string format
+string jsonData = JsonConvert.SerializeObject(bsObj);
+
+Response.Write(jsonData);
+
+//Deserialization
+
+string json = @"{
+  'Name': 'C-sharpcorner',
+  'Description': 'Share Knowledge'
+}";
+BlogSites bsObj = JsonConvert.DeserializeObject<BlogSites>(json);
+Response.Write(bsObj.Name);
